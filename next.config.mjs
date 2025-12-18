@@ -25,6 +25,8 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Required for Next.js 16+ when webpack config is added by plugins like @serwist/next
+  turbopack: {},
 }
 
 export default withSerwist(nextConfig);
